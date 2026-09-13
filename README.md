@@ -1,75 +1,28 @@
-# React + TypeScript + Vite
+# Kurio — NFT Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interface do Kurio NFT Marketplace desenvolvida como parte do Frontend Challenge da Jungle Gaming.
 
-Currently, two official plugins are available:
+## Deploy
+https://kurio-one.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Sobre a entrega
 
-## React Compiler
+Desenvolvi a tela inicial do marketplace seguindo o layout do Figma, com atenção à fidelidade visual, cores, tipografia e composição desktop.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O prazo de dois dias aliado ao fato de nunca ter trabalhado com grande parte da stack obrigatória TanStack Router, TanStack Query, Socket.IO, MSW e Playwright, impossibilitou a entrega completa do desafio. Optei por entregar o que consegui construir com qualidade ao invés de uma entrega superficial de todas as telas.
 
-## Expanding the ESLint configuration
+Estou comprometida a continuar aprendendo essas tecnologias.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Stack utilizada
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React + TypeScript
+- Vite
+- Tailwind CSS
+- react-icons
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Como rodar localmente
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
+npm run dev
 ```
