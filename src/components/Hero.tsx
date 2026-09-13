@@ -27,7 +27,7 @@ function Hero() {
       {/* Imagem */}
       <div className="w-112.5 h-112.5 rounded-2xl overflow-hidden border border-[#3a2a10]">
         <img
-          src="../../public/img-hero.png"
+          src="/img-hero.png"
           alt="NFT destaque"
           className="w-full h-full object-cover"
         />
